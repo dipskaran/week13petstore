@@ -23,11 +23,11 @@ public class Employee {
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "pet_store_id")
 	private PetStore petStore;
-	private String employee_first_name;
-	private String employee_last_name;
+	private String employeeFirstName;
+	private String employeeLastName;
 	
 	@Column(unique = true)
-	private String employee_phone;
+	private String employeePhone;
 	
-	private String employee_job_title;
+	private String employeeJobTitle;
 }
