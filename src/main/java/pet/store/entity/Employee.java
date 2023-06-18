@@ -23,11 +23,9 @@ public class Employee {
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "pet_store_id")
 	private PetStore petStore;
+	
 	private String employeeFirstName;
 	private String employeeLastName;
-	
-	@Column(unique = true)
 	private String employeePhone;
-	
 	private String employeeJobTitle;
 }

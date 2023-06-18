@@ -22,7 +22,6 @@ public class Customer {
 	private Long customerId; 
 	private String customerFirstName;
 	private String customerLastName;
-	@Column(unique = true)
 	private String customerEmail;
 	
 	@EqualsAndHashCode.Exclude
